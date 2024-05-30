@@ -12,13 +12,16 @@ const Contact = () => {
     dispatch(fetchApi());
   }, []);
 
-  // const handleClick = () => {
-  //   dispatch(fetchApi());
-  // };
+  const handleClick = () => {
+    dispatch(fetchApi());
+  };
   return (
     <div>
       <div>
-        <button className="bg-green-500 text-white rounded-md p-2 m-3">
+        <button
+          className="bg-green-500 text-white rounded-md p-2 m-3"
+          onClick={handleClick}
+        >
           Fetch Data
         </button>
       </div>

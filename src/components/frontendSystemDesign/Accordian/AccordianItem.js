@@ -11,7 +11,7 @@ const AccordianItem = ({ title, body, isOpen, setIsOpen }) => {
         }}
       >
         <span>{title}</span>
-        <span>🔽</span>
+        <span>{isOpen ? "🔼" : "🔽"}</span>
       </div>
       <p className="px-2">{isOpen && body}</p>
     </div>

@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import AccordianItem from "./AccordianItem";
+import StyleComponent from "./StyleComponent";
+import ImageSlider from "./ImageSlider";
+
 const acc_data = [
   {
     title: "Item1",
@@ -31,6 +34,8 @@ const Accordian = () => {
           />
         </div>
       ))}
+      <StyleComponent />
+      <ImageSlider />
     </>
   );
 };
