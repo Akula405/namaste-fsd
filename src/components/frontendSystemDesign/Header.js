@@ -38,6 +38,9 @@ const Header = ({ lang, setLang }) => {
             {<Link to="/liveChat">LiveChat</Link>}
           </h1>
           <h1 className="p-2 text-white">
+            {<Link to="/pagination">Pagination</Link>}
+          </h1>
+          <h1 className="p-2 text-white">
             {<Link to="/login-protect">Login</Link>}
           </h1>
         </div>

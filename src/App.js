@@ -12,6 +12,7 @@ import { Route, Routes, BrowserRouter as Routing } from "react-router-dom";
 import Accordian from "./components/frontendSystemDesign/Accordian/Accordian";
 import Debouncing from "./components/frontendSystemDesign/debounce/Debouncing";
 import LiveChat from "./components/frontendSystemDesign/liveChat/LiveChat";
+import Pagination from "./components/frontendSystemDesign/pagination/Pagination";
 
 function App() {
   const [lang, setLang] = useState("en");
@@ -33,6 +34,7 @@ function App() {
           <Route path="/comment" element={<Comments />}></Route>
           <Route path="/accordian" element={<Accordian />}></Route>
           <Route path="/liveChat" element={<LiveChat />}></Route>
+          <Route path="/pagination" element={<Pagination />}></Route>
           <Route path="/login-protect" element={<Login />}></Route>
         </Routes>
       </Routing>
