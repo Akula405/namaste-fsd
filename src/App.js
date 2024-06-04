@@ -26,12 +26,13 @@ function App() {
           <Route path="/" element={<MemeData />}></Route>
           <Route path="/" element={<Home />}></Route>
           <Route path="/debounce" element={<Debouncing />}></Route>
-          <Route element={<ProtectedRoute />}>
-            <Route path="/about" element={<About lang={lang} />}></Route>
-          </Route>
+
+          <Route path="/about" element={<About lang={lang} />}></Route>
 
           <Route path="/contact" element={<Contact />}></Route>
-          <Route path="/comment" element={<Comments />}></Route>
+          <Route element={<ProtectedRoute />}>
+            <Route path="/comment" element={<Comments />}></Route>{" "}
+          </Route>
           <Route path="/accordian" element={<Accordian />}></Route>
           <Route path="/liveChat" element={<LiveChat />}></Route>
           <Route path="/pagination" element={<Pagination />}></Route>
