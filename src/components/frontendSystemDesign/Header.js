@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import Selection from "./Selection";
+import Dropdown from "./navDropdown/Dropdown";
 
 const Header = ({ lang, setLang }) => {
   //const [lang, setLang] = useState("en");
@@ -20,6 +21,7 @@ const Header = ({ lang, setLang }) => {
             <option value="hin">Hindhi</option>
           </select>
         </div> */}
+        <div>{<Dropdown />}</div>
         <div className="flex ">
           <h1 className="p-2 text-white">
             {<Link to="/debounce">Debounce</Link>}

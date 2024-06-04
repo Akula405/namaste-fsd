@@ -86,3 +86,8 @@ export let commentsData = [
     replies: [],
   },
 ];
+export const navItems = [
+  { id: 0, path: "/todo", text: "todo" },
+  { id: 1, path: "/form", text: "form" },
+  { id: 2, path: "/slider", text: "slider" },
+];

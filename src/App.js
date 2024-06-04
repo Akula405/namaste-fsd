@@ -13,7 +13,10 @@ import Accordian from "./components/frontendSystemDesign/Accordian/Accordian";
 import Debouncing from "./components/frontendSystemDesign/debounce/Debouncing";
 import LiveChat from "./components/frontendSystemDesign/liveChat/LiveChat";
 import Pagination from "./components/frontendSystemDesign/pagination/Pagination";
-
+import ImageSlider from "./components/frontendSystemDesign/Accordian/ImageSlider";
+import Todo from "./components/Todo";
+import Form from "./components/Form";
+import Footer from "./components/Footer";
 function App() {
   const [lang, setLang] = useState("en");
   //const isAuthenticated = true; please write auth logic in WraperRoute Component(Protected route)
@@ -25,6 +28,7 @@ function App() {
         <Routes>
           <Route path="/" element={<MemeData />}></Route>
           <Route path="/" element={<Home />}></Route>
+
           <Route path="/debounce" element={<Debouncing />}></Route>
 
           <Route path="/about" element={<About lang={lang} />}></Route>
@@ -37,7 +41,11 @@ function App() {
           <Route path="/liveChat" element={<LiveChat />}></Route>
           <Route path="/pagination" element={<Pagination />}></Route>
           <Route path="/login-protect" element={<Login />}></Route>
+          <Route path="/form" element={<Form />}></Route>
+          <Route path="/todo" element={<Todo />}></Route>
+          <Route path="/slider" element={<ImageSlider />}></Route>
         </Routes>
+        <Footer />
       </Routing>
     </div>
   );
